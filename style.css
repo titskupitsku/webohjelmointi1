@@ -1,5 +1,5 @@
 body {
-    background-color: #9AC9C6;
+    background-color: #9ac9c6;
     margin-left: 64px;
     margin-right: 64px;
 }
@@ -28,9 +28,26 @@ h6 {
 p {
     color: #315B59;
 }
+a:link{
+    color: #349E99
+}
+a:visited {
+    color: #757575
+}
+a:hover {
+    color: #ce4f95
+}
+button {
+    background-color: #349E99;
+    color: #E8F7F7;
+}
+button:hover {
+    background-color: #c46097;
+    color: #E8F7F7;
+}
 section {
     background-color: #AFD4D2;
     border-style: double;
-    border-width: 3px;
+    border-width: 4px;
     border-color: #79B8B4;
 }
