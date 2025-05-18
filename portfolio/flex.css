@@ -73,3 +73,7 @@
     text-align: center;
     margin-bottom: 5px;
 }
+.palmonit img {
+    border: 3px solid #AFD4D2;
+    border-radius: 55px;
+}
