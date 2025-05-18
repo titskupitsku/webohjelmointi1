@@ -1,17 +1,36 @@
+.meow-script-regular {
+  font-family: "Meow Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.newsreader-font> {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.fleur-de-leah-regular {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
     background-color: #9ac9c6;
     margin-left: 64px;
     margin-right: 64px;
 }
 h1 {
+    font-family: "Fleur De Leah", cursive;
     color: #4F9490;
     font-size: 60px;
 }
 h2 {
+    font-family: "Fleur De Leah", cursive;
     color: #4F9490;
     font-size: 48px;
 }
 h3 {
+    font-family: "Newsreader", serif;
     color: #4F9490;
     font-size: 32px;
 }
@@ -26,22 +45,34 @@ h6 {
     color: #4F9490;
 }
 p {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
     color: #315B59;
 }
 a:link{
+    font-family: "Newsreader", serif;
+    font-size: 18px;
     color: #349E99
 }
 a:visited {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
     color: #757575
 }
 a:hover {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
     color: #ce4f95
 }
 button {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
     background-color: #349E99;
     color: #E8F7F7;
 }
 button:hover {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
     background-color: #c46097;
     color: #E8F7F7;
 }
@@ -50,4 +81,33 @@ section {
     border-style: double;
     border-width: 4px;
     border-color: #79B8B4;
+}
+details {
+    font-family: "Newsreader", serif;
+    color: #315B59
+}
+nav {
+    border-style: double;
+    border-width: 4px;
+    border-color: #79B8B4;
+}
+label {
+    font-family: "Newsreader", serif;
+    color: #ffffff
+}
+input {
+    font-family: "Newsreader", serif;
+    color: #315B59
+}
+option {
+    font-family: "Newsreader", serif;
+    color: #315B59
+}
+dialog {
+    background-color:#c46097;
+    border: 3px double #79B8B4;
+    border-radius: 8px;
+}
+hr {
+    color: #94d4d0;
 }
