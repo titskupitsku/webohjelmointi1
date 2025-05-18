@@ -15,44 +15,68 @@
   font-style: normal;
 }
 body {
+    background-image: url("https://img.freepik.com/premium-vector/floral-seamless-pattern-with-flowers-leaves_176161-528.jpg?w=360");
     background-color: #9ac9c6;
-    margin-left: 64px;
-    margin-right: 64px;
+    margin: 0;
+    padding: 0;
 }
 h1 {
     font-family: "Fleur De Leah", cursive;
-    color: #4F9490;
+    color: #a49465;
     font-size: 60px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px #e0bfbf;
 }
 h2 {
     font-family: "Fleur De Leah", cursive;
-    color: #4F9490;
+    color: #a49465;
     font-size: 48px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px #e0bfbf;
 }
 h3 {
-    font-family: "Newsreader", serif;
-    color: #4F9490;
+    font-family: "Fleur De Leah", cursive;
+    color: #a49465;
     font-size: 32px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px #e0bfbf;
 }
 h4 {
     color: #4F9490;
     font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 1px 1px 2px #ffffff;
 }
 h5 {
     color: #4F9490;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 1px 1px 2px #ffffff;
 }
 h6 {
     color: #4F9490;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 1px 1px 2px #ffffff;
 }
 p {
     font-family: "Newsreader", serif;
     font-size: 18px;
-    color: #315B59;
+    color: #716927;
+    margin: 0px;
+    padding: 10px;
 }
 a:link{
     font-family: "Newsreader", serif;
     font-size: 18px;
-    color: #349E99
+    color: #a49465
 }
 a:visited {
     font-family: "Newsreader", serif;
@@ -62,34 +86,35 @@ a:visited {
 a:hover {
     font-family: "Newsreader", serif;
     font-size: 18px;
-    color: #ce4f95
+    color: #f47477
 }
 button {
     font-family: "Newsreader", serif;
     font-size: 18px;
-    background-color: #349E99;
-    color: #E8F7F7;
+    background-color: #f7bfc0;
+    color: #fff9f9;
+    border: 3px double #fce7e7;
+    border-radius: 2px;
+    padding: 4px 6px;
+    margin: 4px;
 }
 button:hover {
     font-family: "Newsreader", serif;
     font-size: 18px;
-    background-color: #c46097;
-    color: #E8F7F7;
+    background-color: #f47477;
+    color: #ffffff;
 }
 section {
-    background-color: #AFD4D2;
-    border-style: double;
-    border-width: 4px;
-    border-color: #79B8B4;
+    background-color: #c7e7e500;
 }
 details {
     font-family: "Newsreader", serif;
-    color: #315B59
+    color: #716927;
 }
 nav {
-    border-style: double;
-    border-width: 4px;
     border-color: #79B8B4;
+    padding: 0px;
+    margin: 0px;
 }
 label {
     font-family: "Newsreader", serif;
@@ -97,17 +122,175 @@ label {
 }
 input {
     font-family: "Newsreader", serif;
-    color: #315B59
+    color: #716927
 }
 option {
     font-family: "Newsreader", serif;
-    color: #315B59
+    color: #716927
 }
 dialog {
-    background-color:#c46097;
-    border: 3px double #79B8B4;
+    background-color:#f7bfc0;
+    border: 3px double #fff9f9;
     border-radius: 8px;
 }
 hr {
-    color: #94d4d0;
+    color: #fce7e7;
+    padding: 0px;
+    margin: 5px;
+}
+li {
+    font-family: "Newsreader", serif;
+    color: #716927
+}
+
+
+.container {
+  display: grid;
+  max-width: 650px;
+  margin: 0 auto;
+  grid-template-areas:
+    "header"
+    "menu"
+    "content"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 6px;
+  padding: 40px 15px;
+  min-height: 100vh;
+}
+.container > div {
+  background-color: #fee9e3e7;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 2px #c7b57b
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+.container > div.menu {
+  grid-area: menu;
+  text-align: center;
+  border: 3px double #d4b9bc;
+  border-radius: 40px;
+  background-color: #fee9e392;
+}
+.container > div.content {
+  grid-area: content;
+  border-style: double;
+  border-width: 3px;
+  border-radius: 8px;
+  border-color: #d4b9bc;
+}
+.container > div.footer {
+  grid-area: footer;
+  text-align: center;
+  border: 3px double #d4b9bc;
+  border-radius: 40px;
+  padding-bottom: 1px;
+  background-color: #fee9e38a
+}
+.footer a {
+    text-decoration: none;
+    margin: 0 4px;
+}
+.footer a img {
+    margin: 0 4px;
+    vertical-align: middle;
+}
+.header {
+    position: relative;
+}
+.kulma {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    font-size: 14px;
+    color:#a49465;
+    padding: 2px 2px;
+    font-family: "Newsreader", serif;
+    z-index: 2;
+}
+.container_portfolio {
+    display: grid;
+    max-width: 650px;
+    margin: 0 auto;
+    grid-template-areas:
+    "header header"
+    "secondarymenu secondarymenu"
+    "mainmenu content"
+    "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 6px;
+    padding: 40px 15px;
+    min-height: 100vh;
+}
+.container_portfolio > div {
+  background-color: #fee9e3e7;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 2px #c7b57b
+}
+.container_portfolio > div.header_portfolio {
+  grid-area: header;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+.container_portfolio > div.mainmenu_portfolio {
+  grid-area: secondarymenu;
+  text-align: center;
+  border: 3px double #d4b9bc;
+  border-radius: 40px;
+  background-color: #fee9e392;
+}
+.container_portfolio > div.secondarymenu_portfolio {
+  grid-area: mainmenu;
+  text-align: center;
+  border: 3px double #d4b9bc;
+  border-radius: 40px;
+  background-color: #fee9e392;
+  color: #716927;
+}
+.container_portfolio > div.content_portfolio {
+  grid-area: content;
+  border-style: double;
+  border-width: 3px;
+  border-radius: 8px;;
+  border-color: #d4b9bc;
+}
+.container_portfolio > div.footer_portfolio {
+  grid-area: footer;
+  text-align: center;
+  border: 3px double #d4b9bc;
+  border-radius: 40px;
+  padding-bottom: 1px;
+  background-color: #fee9e38a
+}
+.footer_portfolio a {
+    text-decoration: none;
+    margin: 0 4px;
+}
+.footer_portfolio a img {
+    margin: 0 4px;
+    vertical-align: middle;
+}
+.container_portfolio .header_portfolio {
+    position: relative;
+}
+.container_portfolio .kulma {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    font-size: 14px;
+    color:#a49465;
+    padding: 2px 2px;
+    font-family: "Newsreader", serif;
+    z-index: 2;
 }

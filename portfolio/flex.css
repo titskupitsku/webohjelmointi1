@@ -4,8 +4,24 @@
   font-weight: 400;
   font-style: normal;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+.keskelle {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+header, nav {
+    width: 50%;
+}
 .flex-laatikko {
-    background-image: url("https://t3.ftcdn.net/jpg/00/75/24/94/360_F_75249447_qfn3W9yVU996Nov6NR2RS2EZ8xR5hBlO.jpg");
+    background-image: url("https://img.freepik.com/premium-vector/floral-seamless-pattern-with-flowers-leaves_176161-528.jpg?w=360");
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +33,7 @@
     justify-content: center;
     border: 4px double #79B8B4;
     border-radius: 8px;
-    background-color: #AFD4D2;
+    background-color: #afd4d2ae;
     margin: 10px;
     padding: 15px;
     font-size: 30px;
