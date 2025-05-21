@@ -215,6 +215,16 @@ li {
     font-family: "Newsreader", serif;
     z-index: 2;
 }
+.kalma {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    font-size: 14px;
+    color:#a49465;
+    padding: 2px 2px;
+    font-family: "Newsreader", serif;
+    z-index: 2;
+}
 .container_portfolio {
     display: grid;
     max-width: 650px;
