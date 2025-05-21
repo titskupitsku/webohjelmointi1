@@ -8,16 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.keskelle {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
-header, nav {
-    width: 50%;
-}
 .flex-laatikko {
-    background-image: url("https://img.freepik.com/premium-vector/floral-seamless-pattern-with-flowers-leaves_176161-528.jpg?w=360");
     width: 100%;
     box-sizing: border-box;
     margin: 0px;
@@ -25,7 +16,10 @@ header, nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #AFD4D2;
+    border-style: double;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: #d4b9bc;
 }
 .flex-laatikko > div {
     display: flex;
@@ -90,6 +84,87 @@ header, nav {
     margin-bottom: 5px;
 }
 .palmonit img {
-    border: 3px solid #AFD4D2;
+    border: 1px solid #AFD4D2;
     border-radius: 55px;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+        "header"
+        "menu"
+        "content"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 6px;
+    justify-content: center;
+    padding: 40px 15px;
+    min-height: 100vh;
+}
+
+.container > div {
+    box-sizing: border-box;
+    background-color: #fee9e3e7;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #c7b57b
+}
+.container > div.header {
+    width: 650px;
+    grid-area: header;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.container > div.menu {
+    grid-area: menu;
+    margin: 0 auto;
+    width: 650px;
+    text-align: center;
+    border: 3px double #d4b9bc;
+    border-radius: 40px;
+    background-color: #fee9e392;
+}
+.container > div.content {
+    grid-area: content;
+    border-style: double;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: #d4b9bc;
+}
+.container > div.footer {
+    grid-area: footer;
+    margin: 0 auto;
+    width: 650px;
+    text-align: center;
+    border: 3px double #d4b9bc;
+    border-radius: 40px;
+    padding-bottom: 1px;
+    background-color: #fee9e38a
+}
+.footer a {
+    text-decoration: none;
+    margin: 0 4px;
+}
+.footer a img {
+    margin: 0 4px;
+    vertical-align: middle;
+}
+.header {
+    position: relative;
+}
+.kulma {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    font-size: 14px;
+    color:#a49465;
+    padding: 2px 2px;
+    font-family: "Newsreader", serif;
+    z-index: 2;
+}
+.container > .flex-laatikko {
+    background-color: #fee9e392;
 }
