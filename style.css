@@ -143,7 +143,6 @@ li {
     color: #716927
 }
 
-
 .container {
   display: grid;
   max-width: 650px;
@@ -291,10 +290,10 @@ li {
     margin: 0 4px;
     vertical-align: middle;
 }
-.container_portfolio .header_portfolio {
+.container_portfolio > .header_portfolio {
     position: relative;
 }
-.container_portfolio .kulma {
+.container_portfolio > .kulma {
     position: absolute;
     top: 80px;
     right: 20px;
@@ -303,4 +302,98 @@ li {
     padding: 2px 2px;
     font-family: "Newsreader", serif;
     z-index: 2;
+}
+@media screen and (min-width: 640px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color:#fee9e392;
+    border-radius: 40px;
+    padding: 0px;
+  }
+  .mainmenu_portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color:#fee9e392;
+    border-radius: 40px;
+    padding: 0px;
+  }
+  .menu a {
+    display: inline-block;
+    margin: 0 8px;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+  }
+  .mainmenu_portfolio a {
+    display: inline-block;
+    margin: 0 8px;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+  }
+  
+  body {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  h1 {font-size: 60px;}
+  h2 {font-size: 48px;}
+  h3 {font-size: 32px;}
+  h4 {font-size: 18px;}
+}
+
+@media screen and (max-width: 640px) {
+  .menu {
+    display: block;
+    text-align: center;
+    background-color:#fee9e392;
+    border-radius: 40px;
+    padding: 0px;
+  }
+  .menu a {
+    display: block;
+    margin: 0 8px;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+  }
+  .mainmenu_portfolio {
+    display: block;
+    text-align: center;
+    background-color:#fee9e392;
+    border-radius: 40px;
+    padding: 0px;
+  }
+  .mainmenu_portfolio a {
+    display: block;
+    margin: 0 8px;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+  }
+  .kulma {
+    top: 32px;
+    font-size: 12px;
+  }
+  .kalma {
+    top: 32px;
+    font-size: 12px;
+  }
+  audio {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  h1 {font-size: 32px;}
+  h2 {font-size: 26px;}
+  h3 {font-size: 22px;}
+  h4 {font-size: 18px;}
 }

@@ -178,3 +178,86 @@ body {
 .container > .flex-laatikko {
     background-color: #fee9e392;
 }
+
+@media screen and (min-width: 640px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color:#fee9e392;
+    border-radius: 40px;
+    padding: 0px;
+  }
+  .menu a {
+    display: inline-block;
+    margin: 0 8px;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+  }
+  body {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  h1 {font-size: 60px;}
+  h2 {font-size: 48px;}
+  h3 {font-size: 32px;}
+  h4 {font-size: 18px;}
+}
+@media screen and (max-width: 640px) {
+  .menu {
+    display: block;
+    text-align: center;
+    background-color:#fee9e392;
+    border-radius: 40px;
+    padding: 0px;
+  }
+  .menu a {
+    display: block;
+    margin: 0 8px;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+  }
+  .kulma {
+    top: 32px;
+    font-size: 12px;
+  }
+  .kalma {
+    top: 32px;
+    font-size: 12px;
+  }
+  .container > div.header,
+  .container > div.menu,
+  .container > div.content,
+  .container > div.footer {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .flex-laatikko {
+    flex-direction: column;
+    padding: 8px;
+  }
+  .flex-laatikko > div {
+    font-size: 20px;
+    padding: 8px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .footer a img {
+    max-width: 60px;
+    height: auto;
+  }
+  body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  h1 {font-size: 32px;}
+  h2 {font-size: 26px;}
+  h3 {font-size: 22px;}
+  h4 {font-size: 18px;}
+}
