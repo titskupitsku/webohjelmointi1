@@ -2,23 +2,23 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="video_favicon.ico">
+    <link rel="icon" type="image/x-icon" href="star_favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Mediasivu, Titi Maaranen, ohjelmointi, peliteknologia, audio, video, kuvaus">
-    <meta name="description" content="Titi Maarasen mediasivu, jossa on nähtävissä erilaisia mediaformaatti-harjoituksia.">
+    <meta name="keywords" content="CV, Titi Maaranen, ohjelmointi, peliteknologia, portfolio">
+    <meta name="description" content="Titi Maarasen portfolio, ohjelmoinnin opiskelija, kiinnostunut peliteknologiasta">
     <meta name="author" content="Titi Maaranen">
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Meow+Script&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-    <title>Titi Maaranen media</title>
-    <script src="media.js" defer></script>
+    <title>Muuttujat ja tietotyypit</title>
+    <script src="muuttujatjatietotyypit.js" defer></script>
 </head>
 <body>
     <div class="container_portfolio">
         <div class="header_portfolio">
-        <h1>Titi Maaranen</h1>
-        <span class="kulma">TIEV24N</span>
-        <span class="kalma">:-)</span>
-    </div>
+            <h1>Titi Maaranen</h1>
+            <span class="kulma">TIEV24N</span>
+            <span class="kalma">:-)</span>
+        </div>
     <div class="mainmenu_portfolio">
         <nav>
             <a href="../omacvsivu.html">Ansioluetteloni</a>
@@ -31,21 +31,24 @@
             <img src="0001Bulbasaur.png" alt="Bulbasaur" width="50" height="50">
             <img src="0002Ivysaur.png" alt="Ivysaur" width="50" height="50">
             <br>
+            <a href="media.html">Media</a><br>
+            <img src="green_leaves.png" alt="leaves" height="50">
+            <br>
             <a href="flex.html">Flexbox</a><br>
             <img src="green_leaves.png" alt="leaves" height="50">
             <a href="keskustelusivu.html">Keskustelusivu</a><br>
             <img src="green_leaves.png" alt="leaves" height="50">
-            <a href="muuttujatjatietotyypit.html">Muuttujat ja tietotyypit</a><br>
-            <img src="green_leaves.png" alt="leaves" height="50">
         </nav>
     </div>
-
 <div class="content_portfolio">
-    <audio controls>
-        <source src="nauhoitus.aac" type="audio/aac">
-        Your browser does not support the audio element.
-    </audio>
-    </div>
+    <section>
+        <h2>Muuttujat</h2>
+        <button onclick="summa()">Summa</button><br>
+        <button onclick="vahennys()">Vähennys</button><br>
+        <button onclick="kerto()">Kerto</button><br>
+        <button onclick="jako()">Jako</button><br>
+    </section>
+</div>
     <div class="footer_portfolio">
         <a href="https://taito.edu.turku.fi/">
             <img src="../moodle-logo.png" alt="Moodle logo" height="20px" style="vertical-align: middle;">
@@ -59,4 +62,3 @@
         <p>© 2025 Titi Maaranen</p>
     </div>
 </body>
-</html>
